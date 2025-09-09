@@ -16,24 +16,26 @@ The core objectives are:
 
 ---
 
+---
+
 ## Repository Structure
-
+```text
 .
-├── ar.py              # Augmented Reality on video (overlay AR source onto book.mov)
-├── briefRotTest.py    # Test BRIEF descriptor robustness to rotation
-├── HarryPotterize.py  # Replace cv_cover with hp_cover on desk image
-├── helper.py          # BRIEF, matching, plotting, and corner detection utilities
-├── loadSaveVid.py     # Video loading and saving utilities
-├── matchPics.py       # Feature matching functions (with caching + visualization)
-├── panaroma.py        # Image stitching to create panoramas
-├── planarH.py         # Homography computation & RANSAC
-├── q3_4.py            # Basic feature matching test
-└── results/           # Output results (matches, AR videos, panoramas)
-
+├── ar.py                # Augmented Reality on video (overlay AR source onto book.mov)
+├── briefRotTest.py      # Test BRIEF descriptor robustness to rotation
+├── HarryPotterize.py    # Replace cv_cover with hp_cover on desk image
+├── helper.py            # BRIEF, matching, plotting, and corner detection utilities
+├── loadSaveVid.py       # Video loading and saving utilities
+├── matchPics.py         # Feature matching functions (with caching + visualization)
+├── pananoma.py          # Image stitching to create panoramas
+├── planarbH.py          # Homography computation & RANSAC
+├── q3_4.py              # Basic feature matching test
+└── results/             # Output results (matches, AR videos, panoramas)
+```
 
 ---
 
-##  Implementation Highlights
+## Implementation Highlights
 
 - **Feature Matching**: FAST + BRIEF for efficient corner detection and descriptors.
 - **Rotation Test**: Evaluated BRIEF performance across different rotations, visualized with histograms.
@@ -54,19 +56,19 @@ The core objectives are:
 
 ## Scripts
 
-# Feature Matching Test
+### Feature Matching Test
 python q3_4.py
 
-# Rotation Test
+### Rotation Test
 python briefRotTest.py
 
-# Harry Potterization (replace cv_cover with hp_cover)
+### Harry Potterization (replace cv_cover with hp_cover)
 python HarryPotterize.py
 
-# Augmented Reality (Video Overlay)
+### Augmented Reality (Video Overlay)
 python ar.py
 
-# Panorama Stitching
+### Panorama Stitching
 python panaroma.py
 
 ## Results
